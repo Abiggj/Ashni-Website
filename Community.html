@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashni Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body id="bg">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Events.html">Events</a>
+        <a href="" class="contact">Contact us</a>
+    </div>
+    <div class="popup" id="contactPopup">
+      <p class="content">Telephone: +91 20 2539 6593 <br>Mobile No: +91 98811 36670 <br>Email:ashnifoundation@gmail.com</p>
+      <button onclick="closePopup()">Close</button>
+  </div>
+    <div>
+        <table border="1">
+            <tr>
+              <th>Name</th>
+              <th>Expertise</th>
+              <th>Role</th>
+            </tr>
+            <tr>
+              <td>Dr. Neha Vikram Sathe</td>
+              <td>PoSH Expert, Social Work Education</td>
+              <td>Internal Committee Member</td>
+            </tr>
+            <tr>
+              <td>Duhita Amey Joshi</td>
+              <td>Trained Psychologist, External Member on IC</td>
+              <td>External Member on Internal Committee</td>
+            </tr>
+            <tr>
+              <td>Anuprita Dixit</td>
+              <td>Expert in Social and Public health, RCH, Nutrition, HIV-AIDS, Family Development, Rural Development, and urban poverty</td>
+              <td>Internal Committee Member</td>
+            </tr>
+            <tr>
+              <td>Sanika Uday Doiphode</td>
+              <td>Certified PoSH Consultant, External Member on IC</td>
+              <td>External Member on Internal Committee</td>
+            </tr>
+            <tr>
+              <td>Rajesh Beedkar</td>
+              <td>Expert in Labour Law Consulting & Regulatory compliances</td>
+              <td>Internal Committee Member</td>
+            </tr>
+            <tr>
+              <td>Dr. Shirin Shikalgar</td>
+              <td>Expert in Community Health, Training and Capacity Building, Research, Monitoring and Evaluation, BCC, Behavior Change Communication</td>
+              <td>Internal Committee Member</td>
+            </tr>
+            <tr>
+              <td>Amol Arun Inamdar</td>
+              <td>IT HR Professional, Certified in PoSH</td>
+              <td>Internal Committee Member</td>
+            </tr>
+            <tr>
+              <td>Meghana Marathe</td>
+              <td>CSR Professional</td>
+              <td>External Member on Internal Committee</td>
+            </tr>
+            <tr>
+              <td>Vaishali Vijay Sonawane</td>
+              <td>IT Project Management and Consultant for IT startups</td>
+              <td>External Member on Internal Committee</td>
+            </tr>
+          </table>
+          
+    </div>
+    <footer class="footer" >
+        <div class="address">ASHNI Foundation
+            F-9, New Friends Society <br>
+            Paud Road, Kothrud Telephone: +91 20 2539 6593
+            Pune - 411 038
+        </div>
+        <div class="registration">
+            Society’s Registration No: Maha/838/2021/Pune <br>
+            Bombay Public Trust Act 1950 Reg No: F-58092
+        </div>
+    </footer>
+    <script>
+      // JavaScript to show and hide the pop-up
+      function showPopup() {
+          var popup = document.getElementById("contactPopup");
+          popup.style.display = "block";
+      }
+
+      function closePopup() {
+          var popup = document.getElementById("contactPopup");
+          popup.style.display = "none";
+      }
+
+      // Add event listener to the "Contact us" link
+      document.querySelector('.contact').addEventListener('click', function(event) {
+          event.preventDefault(); // prevent the default behavior of the anchor link
+          showPopup();
+      });
+  </script>
+  </body>
+</html>

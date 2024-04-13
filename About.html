@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" id="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashni Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Events.html">Events</a>
+        <a href="Community.html">Community</a>
+        <a href="" class="contact">Contact us</a>
+    </div>
+    <div class="popup" id="contactPopup">
+        <p class="content">Telephone: +91 20 2539 6593 <br>Mobile No: +91 98811 36670 <br>Email:ashnifoundation@gmail.com</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <div class="main">
+        <h1 class="header">ASHNI Foundation's Current Projects</h1>
+        <h1 class="header sub">Sath Sath</h1>
+        <h1 class="header sub">ASHNI's Impactful Networking Initiatives in the Community</h1>
+        <p class="content">Over the past six years, ASHNI members have been actively involved in aiding the School Counsellors and Allied Professionals network, fostering a supportive environment. Additionally, for the last three years, they have efficiently managed a dynamic group of professionals dedicated to preventing Sexual Harassment of Women at Workplace, demonstrating their commitment to social welfare.
+            <br>
+            <br>
+            ASHNI possesses a diverse and skilled resource pool, enabling them to fulfill their objective of supporting charitable organizations effectively. Presently, they are extending their support to New Vision NGO by enhancing staff capabilities in Early Childhood Care and Education, thereby investing in the future of education. Furthermore, ASHNI's outreach efforts have reached 11 construction sites, where they conducted 21 insightful Parenting Sessions, impacting the lives of families in these communities positively.
+            <br>
+            <br>
+            ASHNI's contributions are not limited to awareness sessions; they have also collaborated with Shishuadhar, assisting in the development of Human Resource Policies and Standard Operating Procedures (SOPs). Through these multifaceted initiatives, ASHNI continues to make a significant difference in various sectors, embodying the spirit of altruism and community development.            
+        </p>
+        <h1 class="header sub">Jeevan Shala</h1>
+        <h1 class="header sub">Life Skills training: A pioneering initiative,</h1>
+        <p class="content">This has been instrumental in imparting essential life skills training to school children as well as juveniles from the observation home and Jawaharlal Nehru Udyog Kendra in Yerawada. The core aim of this endeavor is to facilitate the holistic development of these young minds. By providing them with vital life skills, Jeevan Shala equips them with the tools necessary to navigate the challenges of life effectively.
+            <br><br>
+            One of the primary objectives of this initiative is to extend a helping hand to children and juveniles who have encountered conflict with the law. Jeevan Shala goes beyond conventional rehabilitation efforts; it focuses on empowering these individuals, aiding them to bounce back from their adversities. By instilling life skills, the program not only helps them reintegrate into society but also contributes significantly to their reform process.
+            <br><br>
+            The emphasis here lies not just in education but in nurturing resilience, confidence, and adaptability among these youngsters. By nurturing their potential and fostering a sense of belonging, Jeevan Shala paves the way for their meaningful participation in mainstream society. This approach not only shapes the lives of these children and juveniles but also contributes positively to the social fabric by fostering individuals who are not only academically capable but also emotionally and socially resilient. Through this initiative, Jeevan Shala acts as a beacon of hope, guiding these young souls toward a brighter, more promising future.
+        </p>
+        <h1 class="header sub">PoSH Services</h1>
+        <h1 class="header sub">Sexual Harassment education</h1>
+        <p class="content">PoSH Services stands as a beacon of empowerment and security in the workplace, diligently implementing the Sexual Harassment of Women at Workplace Act-2013. Through meticulous efforts, the organization has forged a safe environment for all employees, ensuring their well-being and dignity. Central to their initiatives is the formation of an internal committee, meticulously designed to address any concerns related to sexual harassment. This committee operates on the foundation of robust Anti-Sexual Harassment policies, crafted to protect the rights and dignity of every individual within the workplace.
+            <br><br>
+            PoSH Services doesn't stop at mere policy formulation; they actively engage in fostering a culture of respect and understanding among employees. Gender sensitivity workshops and awareness programs are conducted regularly, cultivating an atmosphere where everyone is aware of their rights and responsibilities. The organization invests in the continuous growth of its Internal Committee Members through orientation and capacity-building programs. These initiatives ensure that the committee is well-equipped to handle any situation sensitively and effectively.
+            <br><br>
+            Additionally, PoSH Services takes a progressive step by empanelling External Members on the Internal Committee. This inclusion broadens the perspective, adding an extra layer of impartiality and fairness in addressing grievances. By embracing these comprehensive strategies, PoSH Services not only complies with legal mandates but also champions a workplace culture where every individual feels secure, respected, and valued, fostering a harmonious and productive work environment for all.            
+        </p>
+
+    </div>
+    <footer class="footer" >
+        <div class="address">ASHNI Foundation
+            F-9, New Friends Society <br>
+            Paud Road, Kothrud Telephone: +91 20 2539 6593
+            Pune - 411 038
+        </div>
+        <div class="registration">
+            Society’s Registration No: Maha/838/2021/Pune <br>
+            Bombay Public Trust Act 1950 Reg No: F-58092
+        </div>
+    </footer>
+    <script>
+        // JavaScript to show and hide the pop-up
+        function showPopup() {
+            var popup = document.getElementById("contactPopup");
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("contactPopup");
+            popup.style.display = "none";
+        }
+
+        // Add event listener to the "Contact us" link
+        document.querySelector('.contact').addEventListener('click', function(event) {
+            event.preventDefault(); // prevent the default behavior of the anchor link
+            showPopup();
+        });
+    </script>
+</body>
+</html>
